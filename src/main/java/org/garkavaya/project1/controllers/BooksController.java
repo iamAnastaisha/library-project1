@@ -13,12 +13,12 @@ import org.springframework.web.bind.annotation.*;
 
 @Controller
 @RequestMapping("/books")
-public class BookController {
+public class BooksController {
     private final BookDAO bookDAO;
     private final PersonDAO personDAO;
 
     @Autowired
-    public BookController(BookDAO bookDAO, PersonDAO personDAO) {
+    public BooksController(BookDAO bookDAO, PersonDAO personDAO) {
         this.bookDAO = bookDAO;
         this.personDAO = personDAO;
     }
